@@ -36,7 +36,7 @@ SEARCH_SUFFIXES = [
 def get_ydl_options(playlist=False):
     """Zwraca opcje yt-dlp z ciasteczkami jeśli są dostępne."""
     opts = {
-        'format': 'bestaudio/best',
+        'format': 'bestaudio[ext=webm]/bestaudio[ext=m4a]/bestaudio/best',
         'noplaylist': not playlist,
         'quiet': True,
     }
